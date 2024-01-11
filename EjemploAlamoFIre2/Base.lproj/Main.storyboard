@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EjemploAlamoFIre2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUN-zj-cLW">
+                                <rect key="frame" x="20" y="90" width="374" height="30"/>
+                                <state key="normal" title="GET LISTA ALBUMS"/>
+                                <connections>
+                                    <action selector="btnGetAlbums:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXV-5q-shq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xh-CS-vff">
+                                <rect key="frame" x="20" y="167" width="374" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-9B-0Jk">
+                                <rect key="frame" x="166" y="764" width="82" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeV-kd-EJg">
+                                <rect key="frame" x="20" y="214" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyq-Vu-TpJ">
+                                <rect key="frame" x="20" y="300" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuZ-VB-sFR">
+                                <rect key="frame" x="245" y="216" width="149" height="30"/>
+                                <state key="normal" title="GET PHOTOS ALBUM"/>
+                                <connections>
+                                    <action selector="btnGetPhotos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rD-3A-PLo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Xh-CS-vff" firstAttribute="top" secondItem="GUN-zj-cLW" secondAttribute="bottom" constant="47" id="4OQ-U9-0DJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GUN-zj-cLW" secondAttribute="trailing" constant="20" id="8PQ-7e-T0d"/>
+                            <constraint firstItem="7Xh-CS-vff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HtU-oX-imI"/>
+                            <constraint firstItem="GUN-zj-cLW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OZg-ET-MxU"/>
+                            <constraint firstItem="EuZ-VB-sFR" firstAttribute="top" secondItem="7Xh-CS-vff" secondAttribute="bottom" constant="28.670000000000002" id="Qkw-BA-DeX"/>
+                            <constraint firstItem="PeV-kd-EJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RbU-X6-7P5"/>
+                            <constraint firstItem="PeV-kd-EJg" firstAttribute="top" secondItem="7Xh-CS-vff" secondAttribute="bottom" constant="26.670000000000002" id="SHK-9y-v3x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyq-Vu-TpJ" secondAttribute="trailing" constant="20" id="YD5-4w-aI5"/>
+                            <constraint firstItem="GUN-zj-cLW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="bBD-ln-JgN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Xh-CS-vff" secondAttribute="trailing" constant="20" id="crE-E6-ztx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EuZ-VB-sFR" secondAttribute="trailing" constant="20" id="exY-Mo-1wH"/>
+                            <constraint firstItem="eyq-Vu-TpJ" firstAttribute="top" secondItem="PeV-kd-EJg" secondAttribute="bottom" constant="52" id="eyY-o7-cCV"/>
+                            <constraint firstItem="eyq-Vu-TpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uQk-08-g3m"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cargando" destination="U0Y-9B-0Jk" id="QTd-ON-Ip2"/>
+                        <outlet property="lbPhotos" destination="eyq-Vu-TpJ" id="LR3-de-BdU"/>
+                        <outlet property="lbResultadoListaAlbums" destination="7Xh-CS-vff" id="Epy-0S-KRL"/>
+                        <outlet property="txtIdAlbum" destination="PeV-kd-EJg" id="cFd-eo-bw1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
