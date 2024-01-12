@@ -51,30 +51,66 @@
                                     <action selector="btnGetPhotos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rD-3A-PLo"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="userID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxt-lW-gpe">
+                                <rect key="frame" x="20" y="365" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V3E-5N-bLK">
+                                <rect key="frame" x="20" y="424" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-l8-jAp">
+                                <rect key="frame" x="20" y="494" width="260" height="30"/>
+                                <state key="normal" title="CREAR ALBUM"/>
+                                <connections>
+                                    <action selector="btnCrearAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmT-RW-tZN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EU-2x-vzQ">
+                                <rect key="frame" x="313" y="499" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7Xh-CS-vff" firstAttribute="top" secondItem="GUN-zj-cLW" secondAttribute="bottom" constant="47" id="4OQ-U9-0DJ"/>
+                            <constraint firstItem="qxt-lW-gpe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Mq-Ys-sJO"/>
+                            <constraint firstItem="5EU-2x-vzQ" firstAttribute="top" secondItem="V3E-5N-bLK" secondAttribute="bottom" constant="41" id="6WM-pR-ERp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GUN-zj-cLW" secondAttribute="trailing" constant="20" id="8PQ-7e-T0d"/>
+                            <constraint firstItem="qxt-lW-gpe" firstAttribute="top" secondItem="eyq-Vu-TpJ" secondAttribute="bottom" constant="44" id="9eV-iU-wfH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5EU-2x-vzQ" secondAttribute="trailing" constant="20" id="Aui-vp-cER"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V3E-5N-bLK" secondAttribute="trailing" constant="20" id="GsH-sQ-ugi"/>
                             <constraint firstItem="7Xh-CS-vff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HtU-oX-imI"/>
                             <constraint firstItem="GUN-zj-cLW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OZg-ET-MxU"/>
                             <constraint firstItem="EuZ-VB-sFR" firstAttribute="top" secondItem="7Xh-CS-vff" secondAttribute="bottom" constant="28.670000000000002" id="Qkw-BA-DeX"/>
                             <constraint firstItem="PeV-kd-EJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RbU-X6-7P5"/>
                             <constraint firstItem="PeV-kd-EJg" firstAttribute="top" secondItem="7Xh-CS-vff" secondAttribute="bottom" constant="26.670000000000002" id="SHK-9y-v3x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyq-Vu-TpJ" secondAttribute="trailing" constant="20" id="YD5-4w-aI5"/>
+                            <constraint firstItem="2FQ-l8-jAp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YFX-6Z-IkH"/>
+                            <constraint firstItem="V3E-5N-bLK" firstAttribute="top" secondItem="qxt-lW-gpe" secondAttribute="bottom" constant="25" id="b8z-Cz-1hb"/>
                             <constraint firstItem="GUN-zj-cLW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="bBD-ln-JgN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qxt-lW-gpe" secondAttribute="trailing" constant="20" id="c0v-Rr-Sa2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Xh-CS-vff" secondAttribute="trailing" constant="20" id="crE-E6-ztx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EuZ-VB-sFR" secondAttribute="trailing" constant="20" id="exY-Mo-1wH"/>
                             <constraint firstItem="eyq-Vu-TpJ" firstAttribute="top" secondItem="PeV-kd-EJg" secondAttribute="bottom" constant="52" id="eyY-o7-cCV"/>
+                            <constraint firstItem="V3E-5N-bLK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gnp-S9-XXa"/>
+                            <constraint firstItem="2FQ-l8-jAp" firstAttribute="top" secondItem="V3E-5N-bLK" secondAttribute="bottom" constant="36" id="r49-oU-jAP"/>
                             <constraint firstItem="eyq-Vu-TpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uQk-08-g3m"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cargando" destination="U0Y-9B-0Jk" id="QTd-ON-Ip2"/>
                         <outlet property="lbPhotos" destination="eyq-Vu-TpJ" id="LR3-de-BdU"/>
+                        <outlet property="lbResultadoCrear" destination="5EU-2x-vzQ" id="OWt-ZN-TQP"/>
                         <outlet property="lbResultadoListaAlbums" destination="7Xh-CS-vff" id="Epy-0S-KRL"/>
                         <outlet property="txtIdAlbum" destination="PeV-kd-EJg" id="cFd-eo-bw1"/>
+                        <outlet property="txtTitle" destination="V3E-5N-bLK" id="bC9-6V-F1H"/>
+                        <outlet property="txtUserID" destination="qxt-lW-gpe" id="Txg-a6-Usb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
